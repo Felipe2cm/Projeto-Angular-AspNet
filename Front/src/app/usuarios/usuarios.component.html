@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">CRUD Usuários</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="">Lista</a>
+      </li>      
+    </ul>
+  </div>
+
+  
+</nav>
+
+
+<div class="container">
+  <div>
+    <form #f="ngForm" (ngSubmit)="usuarioSubmit(f)">
+      <div class="row">
+        <div class="col-lg-12">
+          <app-titulo class="mr-auto" [titulo]='titulo'></app-titulo>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" name="nome" [(ngModel)]="usuarioSelecionado.nome_Usuario">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" [(ngModel)]="usuarioSelecionado.email_Usuario">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label>Cpf</label>
+            <input type="text" class="form-control" name="cpf" [textMask]="{mask: mask_cpf}" [(ngModel)]="usuarioSelecionado.cpf_Usuario">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label>Data de Nascimento</label>
+            <input type="text" class="form-control" name="nascimento" [textMask]="{mask: mask_data}" [(ngModel)]="usuarioSelecionado.data_Nascimento">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="form-group">
+
+          <select class="custom-select" id="inputGroupSelect01" name="tipo_id" [(ngModel)]="usuarioSelecionado.usuario_Tipo_Id">
+            <option value="0">Selecione</option>
+            <option *ngFor="let tipo of usuarioTipo" [ngValue]="tipo.id">{{tipo.nome}}</option>
+          </select>
+
+        </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col-lg-12">
+          <button type="button" class="btn btn-info mr-1" (click)="Novo()">Novo</button>
+          <button type="submit" class="btn btn-success mr-1">Salvar</button>
+          <button type="button" class="btn btn-warning" (click)="voltar()">Voltar</button>
+
+          <button type="button" class="btn btn-danger float-right"
+            (click)='showSweet(usuarioSelecionado)'>Deletar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

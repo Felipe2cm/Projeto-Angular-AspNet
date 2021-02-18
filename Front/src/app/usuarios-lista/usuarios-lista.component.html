@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <h2>Lista de Usuários</h2>
+  <div class="row">
+    <div class="form-group col-lg-12">
+      <label>Buscar Usuário</label>
+      <div class="row">
+        <div class="col-lg-6">
+          <input class="form-control" type="text" name="nome" [(ngModel)]="usuarioSelecionado.nome_Usuario">
+        </div>
+        <div class="col-lg-6">
+          <button class="btn btn-info" (click)="usuarioBuscar()">Buscar</button>
+          <button class="btn btn-success float-right" (click)="usuarioNovo()">NovoAluno</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Cpf</th>
+            <th scope="col">Nascimento</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of usuarios">
+            <td>{{user.id_Usuario}}</td>
+            <td>{{user.nome_Usuario}}</td>
+            <td>{{user.email_Usuario}}</td>
+            <td>{{user.cpf_Usuario}}</td>
+            <td>{{user.data_Nascimento}}</td>
+            <td><button class="btn btn-outline-warning" (click)="sendUsuario(user)">Visualizar</button>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
