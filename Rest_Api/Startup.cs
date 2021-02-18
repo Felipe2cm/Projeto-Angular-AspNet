@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
 using Api_Asp.Data;
 
 namespace Api_Asp
@@ -27,10 +28,10 @@ namespace Api_Asp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = Configuration["ConexaoMySql:MySqlConnectionString"];
+            var connection = Configuration["ConexaoMySql:SqliteConnectionString"];
 
             services.AddDbContext<DataContext>(
-                x => x.UseMySql(connection)
+                x => x.UseSqlite(connection)
             );
             
             services.AddControllers();
