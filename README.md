@@ -16,10 +16,12 @@ Estou desenvolvendo este projeto como forma de passatempo nas horas vagas, ou se
   
 ## Tecnologias e Complementos
 <ul>
+  <li>Angular</li>
+  <li>AspNet Core</li> 
   <li>Entity Framework</li>
   <li>Toaster</li>
   <li>SweetAlert</li>
-  <li>Axios</li>
+  <li>Axios</li>  
   <li>Banco Sqlite</li>
 </ul>
 
