@@ -1,6 +1,6 @@
 <h1 align="center">Projeto-Angular-AspNet</h1>
 
-Um pequeno projeto de passatempo com o Front escrito em Angular, e a Api desenvolvida em AspNet e conexão com banco Sqlite utilizando EntityFramework.  
+Um pequeno projeto de passatempo com o unico objetivo de treinar e aperfeiçoar os conhecimentos que aqui serão empregados.  
 
 ## Lista de Conteudos
  <ul>
@@ -12,7 +12,7 @@ Um pequeno projeto de passatempo com o Front escrito em Angular, e a Api desenvo
 
 ## Objetivo
 
-Estou desenvolvendo este projeto como forma de passatempo nas horas vagas, ou seja, de certa forma ele nunca estará completa pois sempre que possível estarei atualizando ele com novas ideias que surgirem conforme o tempo passe. Pois apesar de tudo, também é uma ótima forma de melhorar meus conhecimentos nessas tecnologias empregadas nele.
+Estou desenvolvendo este projeto como forma de passatempo nas horas vagas, ou seja, de certa forma ele nunca estará completo pois sempre que possível estarei atualizando ele com novas ideias que surgirem conforme o tempo passe. Pois apesar de tudo, também é uma ótima forma de melhorar meus conhecimentos nessas tecnologias empregadas nele.
   
 ## Tecnologias e Complementos
 <ul>
