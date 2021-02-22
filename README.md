@@ -3,11 +3,11 @@
 Um pequeno projeto de passatempo com o Front escrito em Angular, e a Api desenvolvida em AspNet e conexão com banco Sqlite utilizando EntityFramework.  
 
 ## Lista de Conteudos
- <p>
- <a href="#objetivo">Objetivo</a> • 
- <a href="#tecnologias-e-complementos">Tecnologias e Complementos</a> •  
- <a href="#imagens">Imagens</a>
-</p>
+ <ul>
+ <li><a href="#objetivo">Objetivo</a> </li> 
+ <li><a href="#tecnologias-e-complementos">Tecnologias e Complementos</a> </li>
+ <li><a href="#imagens">Imagens</a></li>
+</ul>
 
 ## Objetivo
 
@@ -20,6 +20,7 @@ Estou desenvolvendo este projeto como forma de passatempo nas horas vagas, ou se
   <li>Toaster</li>
   <li>SweetAlert</li>
   <li>Axios</li>
+  <li>Banco Sqlite</li>
 </ul>
 </p>
 
