@@ -7,6 +7,7 @@ Um pequeno projeto de passatempo com o Front escrito em Angular, e a Api desenvo
  <li><a href="#objetivo">Objetivo</a> </li> 
  <li><a href="#tecnologias-e-complementos">Tecnologias e Complementos</a> </li>
  <li><a href="#imagens">Imagens</a></li>
+ <li><a href="#em-desenvolvimento">Em desenvolvimento</a></li>
 </ul>
 
 ## Objetivo
@@ -14,7 +15,6 @@ Um pequeno projeto de passatempo com o Front escrito em Angular, e a Api desenvo
 Estou desenvolvendo este projeto como forma de passatempo nas horas vagas, ou seja, de certa forma ele nunca estará completa pois sempre que possível estarei atualizando ele com novas ideias que surgirem conforme o tempo passe. Pois apesar de tudo, também é uma ótima forma de melhorar meus conhecimentos nessas tecnologias empregadas nele.
   
 ## Tecnologias e Complementos
-<p align="center">
 <ul>
   <li>Entity Framework</li>
   <li>Toaster</li>
@@ -22,7 +22,6 @@ Estou desenvolvendo este projeto como forma de passatempo nas horas vagas, ou se
   <li>Axios</li>
   <li>Banco Sqlite</li>
 </ul>
-</p>
 
 ## Imagens
 
@@ -34,4 +33,11 @@ Estou desenvolvendo este projeto como forma de passatempo nas horas vagas, ou se
 
 ### Cadastro de Usuário
 ![Cadastro-Usuario](https://user-images.githubusercontent.com/37378481/108762999-8c23c800-752f-11eb-9ede-9e0852fc53c7.png)
+
+## Em Desenvolvimento
+
+<ul>
+  <li>Tipos de Usuário</li>
+  <li>Cadastro de Produtos</li>
+</ul>
 
