@@ -1,6 +1,6 @@
 <h1 align="center">Projeto-Angular-AspNet</h1>
 
-Um pequeno projeto de passatempo com o unico objetivo de treinar e aperfeiçoar os conhecimentos que aqui serão empregados.  
+<p align="center">Um pequeno projeto de passatempo com o unico objetivo de treinar e aperfeiçoar os conhecimentos que aqui serão empregados. </p>
 
 ## Lista de Conteudos
  <ul>
