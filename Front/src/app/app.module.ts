@@ -6,28 +6,30 @@ import { TextMaskModule } from 'angular2-text-mask';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuariosEditarComponent } from './usuario/usuario-editar/usuario-editar.component';
 import { TituloComponent } from './titulo/titulo.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToasterComponent } from './toaster/toaster.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SweetalertComponent } from './sweetalert/sweetalert.component';
-import { UsuariosListaComponent } from './usuarios-lista/usuarios-lista.component';
+import { UsuariosListaComponent } from './usuario/usuario-lista/usuario-lista.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { TipoUsuarioComponent } from './tipo-usuario/tipo-usuario.component';
+import { TipoUsuarioComponent } from './tipoUsuario/tipo-usuario-editar/tipo-usuario-editar.component';
+import { TipoUsuarioListarComponent } from './tipoUsuario/tipo-usuario-listar/tipo-usuario-listar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsuariosComponent,
+    UsuariosEditarComponent,
     TituloComponent,
     ToasterComponent,
     SweetalertComponent,
     UsuariosListaComponent,
     NavbarComponent,
-    TipoUsuarioComponent
+    TipoUsuarioComponent,
+    TipoUsuarioListarComponent
   ],
   imports: [
     BrowserModule,

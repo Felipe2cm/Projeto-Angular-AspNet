@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/models/Usuario';
 import { UsuarioTipo } from 'src/models/UsuarioTipo';
-import { UsuarioService } from '../usuarios/usuario.service';
+import { UsuarioService } from '../services/usuario.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-usuarios-lista',
-  templateUrl: './usuarios-lista.component.html',
-  styleUrls: ['./usuarios-lista.component.css']
+  templateUrl: './usuario-lista.component.html',
+  styleUrls: ['./usuario-lista.component.css']
 })
 export class UsuariosListaComponent implements OnInit {
 
@@ -25,7 +25,7 @@ export class UsuariosListaComponent implements OnInit {
   sendUsuario(user: Usuario)
   {
     console.log(user);
-    this.router.navigateByUrl('/usuarios', {
+    this.router.navigateByUrl('/usuarios-editar', {
       state: {usuario: user}
     });    
   }
@@ -59,7 +59,7 @@ export class UsuariosListaComponent implements OnInit {
 
   usuarioNovo()
   {
-    this.router.navigateByUrl('/usuarios', {
+    this.router.navigateByUrl('/usuarios-editar', {
       state: {usuario: null}
     });
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { UsuariosComponent } from '../usuarios/usuarios.component';
+//import { UsuariosComponent } from '../usuario';
 
 @Component({
   selector: 'app-toaster',
@@ -15,7 +15,7 @@ export class ToasterComponent implements OnInit {
   }
 
   showToaster(){
-    this.showHTMLMessage("<h2>Hello, I'm the toastr message.<h2>", "Welcome", UsuariosComponent);
+    //this.showHTMLMessage("<h2>Hello, I'm the toastr message.<h2>", "Welcome", UsuariosComponent);
   }
 
   showHTMLMessage(message, title, user){

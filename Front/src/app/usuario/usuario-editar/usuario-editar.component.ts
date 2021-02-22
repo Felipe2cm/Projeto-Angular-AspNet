@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Usuario } from 'src/models/Usuario';
-import { UsuarioService } from './usuario.service';
+import { UsuarioService } from '../services/usuario.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
-import { ToasterComponent } from '../toaster/toaster.component';
+import { ToasterComponent } from '../../toaster/toaster.component';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -12,10 +12,10 @@ import { UsuarioTipo } from 'src/models/UsuarioTipo';
 
 @Component({
   selector: 'app-usuarios',
-  templateUrl: './usuarios.component.html',
-  styleUrls: ['./usuarios.component.css']
+  templateUrl: './usuario-editar.component.html',
+  styleUrls: ['./usuario-editar.component.css']
 })
-export class UsuariosComponent implements OnInit {
+export class UsuariosEditarComponent implements OnInit {
 
   public titulo = 'Usuarios';
   public usuarios: Usuario[];  
